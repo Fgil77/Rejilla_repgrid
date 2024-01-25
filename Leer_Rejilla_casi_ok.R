@@ -6,14 +6,14 @@ library(readxl)
 ##install.packages("tidiverse")
 library(tidyverse)
 library(dplyr)
+##install.packages("devtools") #porque lo pide el programa (no volver a instalar)
+devtools::install_github("r-lib/conflicted")
 
 
-
-#repgrid_elementos <- read_excel("C:\\Users\\gilmo\\Desktop\\Ruta_archivos\\
-Repgrid_LUIS_DAVID_2024-01-09_20_40_23.xlsx")
+#repgrid_elementos <- read_excel("C:\\Users\\gilmo\\Desktop\\Ruta_archivos\\Repgrid_LUIS_DAVID_2024-01-09_20_40_23.xlsx")
 #repgrid_elementos
 
-repgrid_elementos <- read_excel("C:\\Users\\gilmo\\Desktop\\Ruta_archivos\\RTP1734508.xlsx")
+repgrid_elementos <- read_excel("C:\\Users\\gilmo\\Desktop\\Ruta_archivos\\Repgrid_fgil_2023-12-12_18_57_04.xlsx")
 repgrid_elementos
 
 lista_vectores_e <- lapply(repgrid_elementos, as.vector)
@@ -64,7 +64,7 @@ matriz_c
 matriz_cn <- as.numeric(matriz_c)
 matriz_cn
 
-matriz_c_def <- matrix(matriz_cn,nrow(matriz_e), ncol(matriz_e)-2)
+matriz_c_def <- matrix(matriz_cn, ncol(matriz_e)-2, nrow(matriz_e))
 matriz_c_def
 
 tabla_c <- data.frame(matriz_c_def)
@@ -82,11 +82,11 @@ matriz_c_def_distancias <- round(dist(matriz_c_def),2)
 matriz_c_def_distancias
 
 #TABLA DISTANCIAS "ELEMENTOS"
-matriz_e_d__distancias <- round(dist(matriz_e_d),2)
-matriz_e_d__distancias
+matriz_constructos_d__distancias <- round(dist(Tabla_e_d),2)
+matriz_constructos_d__distancias
 
-matriz_e_d__distancias2 <- round(dist(T_elementos_fin),2)
-matriz_e_d__distancias2
+matriz_elementos_d__distancias2 <- round(dist(matriz_c_def),2)
+matriz_elementos_d__distancias2
 
 #desde aqui ya no lo tengo tan claro otras pruebas
 
