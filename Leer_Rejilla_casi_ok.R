@@ -123,3 +123,4 @@ library(fmsb)
 #df_radar_norm <- as.data.frame(scale(df_radar))
 #df_radar_norm$cluster <- resultado_kmeans$cluster
 
+#inteto modificar a ver si grabo algo
