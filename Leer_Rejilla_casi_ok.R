@@ -3,13 +3,14 @@
 #-----------------------------------------------------
 
 library(readxl)
-#install.packages("tidiverse")
+##install.packages("tidiverse")
 library(tidyverse)
 library(dplyr)
 
 
 
-#repgrid_elementos <- read_excel("C:\\Users\\gilmo\\Desktop\\Ruta_archivos\\Repgrid_LUIS_DAVID_2024-01-09_20_40_23.xlsx")
+#repgrid_elementos <- read_excel("C:\\Users\\gilmo\\Desktop\\Ruta_archivos\\
+Repgrid_LUIS_DAVID_2024-01-09_20_40_23.xlsx")
 #repgrid_elementos
 
 repgrid_elementos <- read_excel("C:\\Users\\gilmo\\Desktop\\Ruta_archivos\\RTP1734508.xlsx")
