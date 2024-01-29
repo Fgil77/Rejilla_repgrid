@@ -48,7 +48,7 @@ vector_variables_op_c <- matriz_e[,ncol(matriz_e)]
 vector_variables_c
 vector_variables_op_c
 
-#elimiino las columnas
+#elimino las columnas
 columnas_a_eliminar <- c(1, ncol(matriz_e))
 matriz_e_d <- matriz_e[, -columnas_a_eliminar]
 matriz_e_d
@@ -193,6 +193,75 @@ temp_html_Constructos
 
 
 ########################################################
+#SUBO TABLA DE IMPLICACIONES
+#######################################################
+
+
+#library(readxl)
+
+
+#repgrid_implicaciones <- read_excel("C:\\Users\\gilmo\\Desktop\\Ruta_archivos\\Wimpgrid_fgil_2023-12-12_18_57_24.xlsx")
+#repgrid_implicaciones
+
+#lista_vectores_e_implicaciones <- lapply(repgrid_implicaciones, as.vector)
+#lista_vectores_e_implicaciones
+
+#matriz_c_implicaciones <- as.matrix(repgrid_implicaciones)
+#matriz_c_implicaciones
+
+#ncol(matriz_e)
+#nrow(matriz_e)
+
+#elimino las columnas
+#columnas_a_eliminar_implicaciones <- c(1, ncol(matriz_c_implicaciones))
+#matriz_c_implica_d <- matriz_c_implicaciones[,-columnas_a_eliminar_implicaciones]
+#matriz_c_implica_d 
+#matriz_implica_numerico <- as.numeric(matriz_c_implica_d)
+#matriz_implica_numerico
+
+#matriz_c_Implica_def <- matrix(matriz_implica_numerico, ncol(matriz_c_implica_d )-2, nrow(matriz_c_implica_d ))
+#matriz_c_Implica_def
+
+#matriz_diferencias <- matriz_c_Implica_def-matriz_c_def
+
+#yo_actual <- lista_vectores_e[[2]]
+#yo_actual
+
+#yo_actualll <- as.vector(Tabla_e_d)
+#yo_actualll [[1]]
+#yo_actuallll <- as.numeric(yo_actualll [[1]])
+#yo_actuallll
+
+
+#lista_vectores_e_implicaciones[[2]]
+
+#variacion_yo_actual_1 <- lista_vectores_e[[2]] - lista_vectores_e_implicaciones[[2]]
+#variacion_yo_actual_1
+#variazión_x1 <- lista_vectores_e[[2]]
+#dif_variaciónx1 <- variazión_x1[1]-1
+#dif_variaciónx1 
+#función_dif_variaciónx1 <- c(dif_variaciónx1, variacion_yo_actual_1)
+#función_dif_variaciónx1
+
+#variacion_yo_actual_2 <- lista_vectores_e[[3]] - lista_vectores_e_implicaciones[[3]]
+#variacion_yo_actual_2
+#variazión_x2 <- lista_vectores_e[[2]]
+#dif_variaciónx2 <- variazión_x1[2]-1
+#dif_variaciónx2 
+#función_dif_variaciónx2 <- c(dif_variaciónx2, variacion_yo_actual_2)
+#función_dif_variaciónx2
+
+
+
+
+#variacion_yo_actual_3 <- lista_vectores_e[[4]] - lista_vectores_e_implicaciones[[4]]
+#variacion_yo_actual_3
+
+
+
+
+
+
 
 
 
