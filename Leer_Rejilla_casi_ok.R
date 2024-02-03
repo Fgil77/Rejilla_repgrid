@@ -317,3 +317,6 @@ temp_html_Constructos
 #df_radar_norm$cluster <- resultado_kmeans$cluster
 
 #inteto modificar a ver si grabo algo
+
+
+#Añado este texto para probar commit desde RStudio.Version
